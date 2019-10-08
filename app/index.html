@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altera sberbank</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+//= templates/header.html
+//= templates/mobileNavigation.html
+//= templates/navigation.html
+
+<div class="wrapper">
+    <section class="section section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-6 order-2 order-lg-1">
+                    <h1 class="heading1 line-bottom color-black">Продажа готового бизнеса</h1>
+                    <div class="sub-heading color-black mb30">Совместный портал от Сбербанк и Альтера Инвест</div>
+                    <a href="#" class="button button-black">Подобрать и купить бизнес</a>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6 order-1 order-lg-2">
+                    <img src="images/bugatti.png" alt="image"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 d-flex">
+                    <i class="section2__icon icon1 line-right line-right__top"></i>
+                    <div class="box ml15">
+                        <div class="text color-black">Сопровождение сделок<br/> от профессионала рынка</div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 d-flex">
+                    <i class="section2__icon icon2 line-right line-right__top"></i>
+                    <div class="box ml15">
+                        <div class="text color-black">Дополнительные преимущества<br/> от Сбербанк и Альтера Инвест</div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 d-flex">
+                    <i class="section2__icon icon3 line-right line-right__top"></i>
+                    <div class="box ml15">
+                        <div class="text color-black">Детальная проверка бизнеса<br/> перед покупкой</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading2 mb20">Выберите бизнес из каталога</div>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <label class="input-label color-dark caption mb0 d-block">Выберите город</label>
+                    <select class="custom-select">
+                        <option value="0" name="0">Санкт-Петербург</option>
+                        <option value="1" name="1">Москва</option>
+                        <option value="2" name="2">Нижний-Новгород</option>
+                        <option value="3" name="3">Псков</option>
+                        <option value="4" name="4">Невероятно длинное название города</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <label class="input-label color-dark caption mb0 d-block">Выберите категорию</label>
+                    <select class="custom-select">
+                        <option value="0" name="0">Все категории</option>
+                        <option value="1" name="1">Категория 1</option>
+                        <option value="2" name="2">Категория 2</option>
+                        <option value="3" name="3">Категория 3</option>
+                        <option value="4" name="4">Категория 4</option>
+                        <option value="5" name="5">Категория 5</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <div class="box select-box">
+                        <label class="input-label color-dark caption mb0 d-block">Цена от</label>
+                        <input type="text" class="custom-input delimiter small" placeholder="100 000"/>
+                    </div>
+                    <span class="to">-</span>
+                    <div class="box select-box">
+                        <label class="input-label color-dark caption mb0 d-block">Цена до</label>
+                        <input type="text" class="custom-input delimiter small" placeholder="50 000 000"/>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <div class="box select-box">
+                        <label class="input-label color-dark caption mb0 d-block">Прибыль от</label>
+                        <input type="text" class="custom-input delimiter small" placeholder="120"/>
+                    </div>
+                    <span class="to">-</span>
+                    <div class="box select-box">
+                        <label class="input-label color-dark caption mb0 d-block">Прибыль до</label>
+                        <input type="text" class="custom-input delimiter small" placeholder="10 000 000"/>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="line"></div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6">
+                    <label class="checkbox-label text d-flex">
+                        <input class="checkbox-label__input" type="checkbox" id="checkbox">
+                        <span class="checkbox-label__toggle"></span>
+                        Только с сопровождением от Альтера Инвест
+                    </label>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6 text-right m__text-left">
+                    <span class="link mr30"><i class="icon icon-close"></i> Сбросить все фильтры</span>
+                    <button class="button button-black" type="button">Показать результаты</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section4">
+        <div class="container">
+            <div class="row mb20">
+                <div class="col-12 col-lg-3 col-xl-3 heading4 color-black">Найдено 465 объектов</div>
+                <div class="col-12 col-lg-5 col-xl-5 offset-lg-4 offset-xl-4 text-right m__text-left sort">
+                    <a href="#" class="link active ml20 color-dark">По цене</a>
+                    <a href="#" class="link ml20 color-dark">По прибыли</a>
+                    <a href="#" class="link ml20 color-dark">По окупаемости</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 col-xl-4 mb30">
+                    <a class="listing-item arrow arrow-black" href="#">
+                        <div class="bonus">
+                            <span class="altera" data-tooltip="С сопровождением от Альтера Инвест"></span>
+                            <span class="spasibo" data-tooltip="Бонусы от Сбербанк при покупке"></span>
+                        </div>
+                        <div class="listing-item__imgbox mb20">
+                            <img src="images/image.jpg" alt="image" class="lazy"/>
+                        </div>
+                        <div class="text color-medium mb10">Санкт-Петербург</div>
+                        <div class="listing-item__article heading3 color-black mb20">Салон красоты в торговом центре рядом с метро</div>
+                        <div class="d-flex justify-content-between mb10">
+                            <div class="text color-medium">Прибыль:</div>
+                            <div class="text color-black">150 000 ₽ в месяц</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text color-medium">Окупаемость:</div>
+                            <div class="text color-black">8 месяцев</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 mb30">
+                    <a class="listing-item arrow arrow-black" href="#">
+                        <div class="bonus">
+                            <span class="altera" data-tooltip="С сопровождением от Альтера Инвест"></span>
+                            <span class="spasibo" data-tooltip="Бонусы от Сбербанк при покупке"></span>
+                        </div>
+                        <div class="listing-item__imgbox mb20">
+                            <img src="images/image.jpg" alt="image" class="lazy"/>
+                        </div>
+                        <div class="text color-medium mb10">Санкт-Петербург</div>
+                        <div class="listing-item__article heading3 color-black mb20">Салон красоты в торговом центре рядом с метро</div>
+                        <div class="d-flex justify-content-between mb10">
+                            <div class="text color-medium">Прибыль:</div>
+                            <div class="text color-black">150 000 ₽ в месяц</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text color-medium">Окупаемость:</div>
+                            <div class="text color-black">8 месяцев</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 mb30">
+                    <a class="listing-item arrow arrow-black" href="#">
+                        <div class="bonus">
+                            <span class="altera" data-tooltip="С сопровождением от Альтера Инвест"></span>
+                            <span class="spasibo" data-tooltip="Бонусы от Сбербанк при покупке"></span>
+                        </div>
+                        <div class="listing-item__imgbox mb20">
+                            <img src="images/image.jpg" alt="image" class="lazy"/>
+                        </div>
+                        <div class="text color-medium mb10">Санкт-Петербург</div>
+                        <div class="listing-item__article heading3 color-black mb20">Салон красоты в торговом центре рядом с метро</div>
+                        <div class="d-flex justify-content-between mb10">
+                            <div class="text color-medium">Прибыль:</div>
+                            <div class="text color-black">150 000 ₽ в месяц</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text color-medium">Окупаемость:</div>
+                            <div class="text color-black">8 месяцев</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 mb30">
+                    <a class="listing-item arrow arrow-black" href="#">
+                        <div class="bonus">
+                            <span class="altera" data-tooltip="С сопровождением от Альтера Инвест"></span>
+                            <span class="spasibo" data-tooltip="Бонусы от Сбербанк при покупке"></span>
+                        </div>
+                        <div class="listing-item__imgbox mb20">
+                            <img src="images/image.jpg" alt="image" class="lazy"/>
+                        </div>
+                        <div class="text color-medium mb10">Санкт-Петербург</div>
+                        <div class="listing-item__article heading3 color-black mb20">Салон красоты в торговом центре рядом с метро</div>
+                        <div class="d-flex justify-content-between mb10">
+                            <div class="text color-medium">Прибыль:</div>
+                            <div class="text color-black">150 000 ₽ в месяц</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text color-medium">Окупаемость:</div>
+                            <div class="text color-black">8 месяцев</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 mb30">
+                    <a class="listing-item arrow arrow-black" href="#">
+                        <div class="bonus">
+                            <span class="altera" data-tooltip="С сопровождением от Альтера Инвест"></span>
+                            <span class="spasibo" data-tooltip="Бонусы от Сбербанк при покупке"></span>
+                        </div>
+                        <div class="listing-item__imgbox mb20">
+                            <img src="images/image.jpg" alt="image" class="lazy"/>
+                        </div>
+                        <div class="text color-medium mb10">Санкт-Петербург</div>
+                        <div class="listing-item__article heading3 color-black mb20">Салон красоты в торговом центре рядом с метро</div>
+                        <div class="d-flex justify-content-between mb10">
+                            <div class="text color-medium">Прибыль:</div>
+                            <div class="text color-black">150 000 ₽ в месяц</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text color-medium">Окупаемость:</div>
+                            <div class="text color-black">8 месяцев</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 mb30">
+                    <a class="listing-item arrow arrow-black" href="#">
+                        <div class="bonus">
+                            <span class="altera" data-tooltip="С сопровождением от Альтера Инвест"></span>
+                            <span class="spasibo" data-tooltip="Бонусы от Сбербанк при покупке"></span>
+                        </div>
+                        <div class="listing-item__imgbox mb20">
+                            <img src="images/image.jpg" alt="image" class="lazy"/>
+                        </div>
+                        <div class="text color-medium mb10">Санкт-Петербург</div>
+                        <div class="listing-item__article heading3 color-black mb20">Салон красоты в торговом центре рядом с метро</div>
+                        <div class="d-flex justify-content-between mb10">
+                            <div class="text color-medium">Прибыль:</div>
+                            <div class="text color-black">150 000 ₽ в месяц</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="text color-medium">Окупаемость:</div>
+                            <div class="text color-black">8 месяцев</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                    </a>
+                </div>
+                <div class="col-12 text-right mt30">
+                    <a href="#" class="button button-black">Смотреть все объекты</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-6 order-2 order-lg-1">
+                    <div class="about">
+                        <div class="about-img">
+                            <img src="images/notskii.png" alt="image"/>
+                        </div>
+                        <div class="about-label text-center">
+                            <div class="heading3 color-black">Максим Новицкий</div>
+                            <p class="text color-medium">Основатель компании Альтера Инвест</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6 order-1 order-lg-2">
+                    <div class="heading2 line-bottom color-black mt50">Подробнее о проекте</div>
+                    <div class="sub-heading color-black mb20">Наша миссия — создать в России среду для успешного и безопасного инвестирования.</div>
+                    <p class="p color-dark mb30">Для этого мы с 2007 года поставляем качественные услуги продавцам и покупателям бизнеса, обучаем
+                        и готовим предпринимателей, а также помогаем клиентам правильно распоряжаться деньгами с помощью прямых инвестиций.
+                        <br/><br/>
+                        Первый покоренный нами олимп — готовый бизнес. С 2015 года Альтера Инвест признается бизнес-брокером №1 на рынке покупки
+                        и продажи бизнеса по версии журнала «КоммерсантЪ». К 2018 году мы совершили 4800+ сделок по готовому бизнесу, а наш охват
+                        рынка в 3 раза больше общей доли всех остальных бизнес-брокеров. </p>
+                    <a href="#" class="button button-black">Читать всю историю</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb50">
+                    <div class="heading2 mb50 color-black">Команда проекта</div>
+                    <div class="owl-carousel carousel-custom carousel-custom-team">
+                        <div class="carousel-custom__item d-flex">
+                            <div class="profile mr30">
+                                <img class="owl-lazy" data-src="images/man.jpg" alt="image"/>
+                            </div>
+                            <div class="info">
+                                <div class="heading3 color-black mb5">Константин Константинопольский</div>
+                                <p class="text mb0 color-medium line-bottom">Старший бизнес-брокер</p>
+                                <p class="info-text text color-dark">Сопроводил более 45 сделок по покупке бизнеса в России. Основная специализация "Салоны красоты"</p>
+                            </div>
+                        </div>
+                        <div class="carousel-custom__item d-flex">
+                            <div class="profile mr30">
+                                <img class="owl-lazy" data-src="images/man.jpg" alt="image"/>
+                            </div>
+                            <div class="info">
+                                <div class="heading3 color-black mb5">Константин Константинопольский</div>
+                                <p class="text mb0 color-medium line-bottom">Старший бизнес-брокер</p>
+                                <p class="info-text text color-dark">Сопроводил более 45 сделок по покупке бизнеса в России. Основная специализация "Салоны красоты"</p>
+                            </div>
+                        </div>
+                        <div class="carousel-custom__item d-flex">
+                            <div class="profile mr30">
+                                <img class="owl-lazy" data-src="images/man.jpg" alt="image"/>
+                            </div>
+                            <div class="info">
+                                <div class="heading3 color-black mb5">Константин Константинопольский</div>
+                                <p class="text mb0 color-medium line-bottom">Старший бизнес-брокер</p>
+                                <p class="info-text text color-dark">Сопроводил более 45 сделок по покупке бизнеса в России. Основная специализация "Салоны красоты"</p>
+                            </div>
+                        </div>
+                        <div class="carousel-custom__item d-flex">
+                            <div class="profile mr30">
+                                <img class="owl-lazy" data-src="images/man.jpg" alt="image"/>
+                            </div>
+                            <div class="info">
+                                <div class="heading3 color-black mb5">Константин Константинопольский</div>
+                                <p class="text mb0 color-medium line-bottom">Старший бизнес-брокер</p>
+                                <p class="info-text text color-dark">Сопроводил более 45 сделок по покупке бизнеса в России. Основная специализация "Салоны красоты"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-right">
+                    <a href="#" class="button button-black">Смотреть всю команду</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section7">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb50">
+                    <div class="heading2 mt50 mb50 color-black">СМИ о нас</div>
+                    <div class="owl-carousel carousel-custom carousel-custom-smi">
+                        <div class="carousel-custom__item">
+                            <a href="#">
+                                <div class="image-box mb20">
+                                    <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                                </div>
+                                <div class="heading3 mb5 color-black">Название издания</div>
+                                <p class="link underline color-dark">Очень длинное название статьи о преимуществах работы с порталом от Сбербанк и Альтера Инвест в три строки</p>
+                            </a>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <a href="#">
+                                <div class="image-box mb20">
+                                    <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                                </div>
+                                <div class="heading3 mb5 color-black">Название издания</div>
+                                <p class="link underline color-dark">Очень длинное название статьи о преимуществах работы с порталом от Сбербанк и Альтера Инвест в три строки</p>
+                            </a>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <a href="#">
+                                <div class="image-box mb20">
+                                    <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                                </div>
+                                <div class="heading3 mb5 color-black">Название издания</div>
+                                <p class="link underline color-dark">Очень длинное название статьи о преимуществах работы с порталом от Сбербанк и Альтера Инвест в три строки</p>
+                            </a>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <a href="#">
+                                <div class="image-box mb20">
+                                    <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                                </div>
+                                <div class="heading3 mb5 color-black">Название издания</div>
+                                <p class="link underline color-dark">Очень длинное название статьи о преимуществах работы с порталом от Сбербанк и Альтера Инвест в три строки</p>
+                            </a>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <a href="#">
+                                <div class="image-box mb20">
+                                    <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                                </div>
+                                <div class="heading3 mb5 color-black">Название издания</div>
+                                <p class="link underline color-dark">Очень длинное название статьи о преимуществах работы с порталом от Сбербанк и Альтера Инвест в три строки</p>
+                            </a>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <a href="#">
+                                <div class="image-box mb20">
+                                    <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                                </div>
+                                <div class="heading3 mb5 color-black">Название издания</div>
+                                <p class="link underline color-dark">Очень длинное название статьи о преимуществах работы с порталом от Сбербанк и Альтера Инвест в три строки</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-right">
+                    <a href="#" class="button button-black">Смотреть все публикации</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section8">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb50">
+                    <div class="heading2 mt50 mb50 color-black">Обучающие видео</div>
+                    <div class="owl-carousel carousel-custom carousel-custom-smi">
+                        <div class="carousel-custom__item">
+                            <div class="image-box video video-btn mb20" data-toggle="modal" data-src="https://www.youtube.com/embed/IP7uGKgJL8U" data-target="#videoModal">
+                                <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                            </div>
+                            <div class="heading3 mb5 color-black">Длинное название обучающего видео от Альтера Инвест и Сбербанк</div>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <div class="image-box video mb20">
+                                <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                            </div>
+                            <div class="heading3 mb5 color-black">Длинное название обучающего видео от Альтера Инвест и Сбербанк</div>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <div class="image-box video mb20">
+                                <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                            </div>
+                            <div class="heading3 mb5 color-black">Длинное название обучающего видео от Альтера Инвест и Сбербанк</div>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <div class="image-box video mb20">
+                                <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                            </div>
+                            <div class="heading3 mb5 color-black">Длинное название обучающего видео от Альтера Инвест и Сбербанк</div>
+                        </div>
+                        <div class="carousel-custom__item">
+                            <div class="image-box video mb20">
+                                <img class="owl-lazy" data-src="images/image.jpg" alt="image"/>
+                            </div>
+                            <div class="heading3 mb5 color-black">Длинное название обучающего видео от Альтера Инвест и Сбербанк</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-right">
+                    <a href="#" class="button button-black">Смотреть все видео</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+//= templates/footer.html
+
+<script type="text/javascript" src="https://yastatic.net/jquery/3.1.1/jquery.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js" defer></script>
+<script type="text/javascript" src="js/scripts.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altera sberbank</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+//= templates/header.html
+//= templates/mobileNavigation.html
+//= templates/navigation.html
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row section3">
+            <div class="col-12">
+                <div class="breadcrumbs d-flex mt50 mb10">
+                    <div class="breadcrumbs-item"><a href="#" class="caption color-dark">Главная</a></div>
+                    <div class="breadcrumbs-item"><span class="caption color-dark">Сравнение</span></div>
+                </div>
+                <div class="heading1 mb50">Сравнение объектов</div>
+            </div>
+        </div>
+        <div class="row mb50">
+            <div class="col-6 mb40">
+                <label class="checkbox-label text">
+                    <input class="checkbox-label__input" type="checkbox" id="checkbox">
+                    <span class="checkbox-label__toggle"></span>
+                    Показывать только различия
+                </label>
+            </div>
+            <div class="col-12">
+                <div class="owl-carousel carousel-custom carousel-custom-compare">
+                    <div class="compare-item" data-item="0">
+                        <div class="image mb20">
+                            <img src="images/image.jpg" alt="image"/>
+                        </div>
+                        <div class="carousel-custom-compare__remove"></div>
+                        <span class="link icon icon-favourite carousel-custom-compare__favourite"></span>
+                        <div class="heading3 compare-item__article mb20 color-black">Салон красоты в торговом центре рядом</div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="1">
+                            <div class="heading4 compare-item__box-article">Финансы</div>
+                        </div>
+                        <div class="compare-item__box box1">
+                            <p class="text color-medium mb10">Прибыль</p>
+                            <p class="text mb20">150 000 ₽ в месяц</p>
+                            <p class="text color-medium mb10">Окупаемость</p>
+                            <p class="text mb20">15 месяцев</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="2">
+                            <div class="heading4 compare-item__box-article">Местоположение</div>
+                        </div>
+                        <div class="compare-item__box box2">
+                            <p class="text color-medium mb10">Город</p>
+                            <p class="text mb20">Санкт-Петербург</p>
+                            <p class="text color-medium mb10">Район</p>
+                            <p class="text mb20">Калининский</p>
+                            <p class="text color-medium mb10">Метро</p>
+                            <p class="text mb20">Площадь Ленина</p>
+                            <p class="text color-medium mb10">Адрес</p>
+                            <p class="text mb20">По запросу</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="3">
+                            <div class="heading4 compare-item__box-article">Штат компании</div>
+                        </div>
+                        <div class="compare-item__box box3">
+                            <p class="text color-medium mb10">Кол-во работников</p>
+                            <p class="text mb20">2</p>
+                            <p class="text color-medium mb10">Фонд ЗП</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="4">
+                            <div class="heading4 compare-item__box-article">Помещения</div>
+                        </div>
+                        <div class="compare-item__box box4">
+                            <p class="text color-medium mb10">Площадь</p>
+                            <p class="text mb20">80 м2</p>
+                            <p class="text color-medium mb10">Арендодатель</p>
+                            <p class="text mb20">Юридическое лицо</p>
+                            <p class="text color-medium mb10">Стоимость аренды</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="5">
+                            <div class="heading4 compare-item__box-article">Дополнительная информация</div>
+                        </div>
+                        <div class="compare-item__box box5">
+                            <p class="text color-medium mb10">Возраст бизнеса</p>
+                            <p class="text mb20">84 года</p>
+                            <p class="text color-medium mb10">Причина продажи</p>
+                            <p class="text mb20">Переезд</p>
+                            <p class="text color-medium mb10">Организационно-правовая форма</p>
+                            <p class="text mb20">ООО</p>
+                        </div>
+                    </div>
+                    <div class="compare-item" data-item="1">
+                        <div class="image mb20">
+                            <img src="images/image-vertical.jpg" alt="image"/>
+                        </div>
+                        <div class="carousel-custom-compare__remove"></div>
+                        <div class="heading3 compare-item__article mb20 color-black">Салон красоты в торговом центре рядом</div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="1">
+                            <div class="heading4 compare-item__box-article">Финансы</div>
+                        </div>
+                        <div class="compare-item__box box1">
+                            <p class="text color-medium mb10">Прибыль</p>
+                            <p class="text mb20">150 000 ₽ в месяц</p>
+                            <p class="text color-medium mb10">Окупаемость</p>
+                            <p class="text mb20">15 месяцев</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="2">
+                            <div class="heading4 compare-item__box-article">Местоположение</div>
+                        </div>
+                        <div class="compare-item__box box2">
+                            <p class="text color-medium mb10">Город</p>
+                            <p class="text mb20">Санкт-Петербург</p>
+                            <p class="text color-medium mb10">Район</p>
+                            <p class="text mb20">Калининский</p>
+                            <p class="text color-medium mb10">Метро</p>
+                            <p class="text mb20">Площадь Ленина</p>
+                            <p class="text color-medium mb10">Адрес</p>
+                            <p class="text mb20">По запросу</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="3">
+                            <div class="heading4 compare-item__box-article">Штат компании</div>
+                        </div>
+                        <div class="compare-item__box box3">
+                            <p class="text color-medium mb10">Кол-во работников</p>
+                            <p class="text mb20">2</p>
+                            <p class="text color-medium mb10">Фонд ЗП</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="4">
+                            <div class="heading4 compare-item__box-article">Помещения</div>
+                        </div>
+                        <div class="compare-item__box box4">
+                            <p class="text color-medium mb10">Площадь</p>
+                            <p class="text mb20">80 м2</p>
+                            <p class="text color-medium mb10">Арендодатель</p>
+                            <p class="text mb20">Юридическое лицо</p>
+                            <p class="text color-medium mb10">Стоимость аренды</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="5">
+                            <div class="heading4 compare-item__box-article">Дополнительная информация</div>
+                        </div>
+                        <div class="compare-item__box box5">
+                            <p class="text color-medium mb10">Возраст бизнеса</p>
+                            <p class="text mb20">84 года</p>
+                            <p class="text color-medium mb10">Причина продажи</p>
+                            <p class="text mb20">Переезд</p>
+                            <p class="text color-medium mb10">Организационно-правовая форма</p>
+                            <p class="text mb20">ООО</p>
+                        </div>
+                    </div>
+                    <div class="compare-item" data-item="2">
+                        <div class="image mb20">
+                            <img src="images/image-large.jpg" alt="image"/>
+                        </div>
+                        <div class="carousel-custom-compare__remove"></div>
+                        <div class="heading3 compare-item__article mb20 color-black">Салон красоты в торговом центре рядом</div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="1">
+                            <div class="heading4 compare-item__box-article">Финансы</div>
+                        </div>
+                        <div class="compare-item__box box1">
+                            <p class="text color-medium mb10">Прибыль</p>
+                            <p class="text mb20">150 000 ₽ в месяц</p>
+                            <p class="text color-medium mb10">Окупаемость</p>
+                            <p class="text mb20">15 месяцев</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="2">
+                            <div class="heading4 compare-item__box-article">Местоположение</div>
+                        </div>
+                        <div class="compare-item__box box2">
+                            <p class="text color-medium mb10">Город</p>
+                            <p class="text mb20">Санкт-Петербург</p>
+                            <p class="text color-medium mb10">Район</p>
+                            <p class="text mb20">Калининский</p>
+                            <p class="text color-medium mb10">Метро</p>
+                            <p class="text mb20">Площадь Ленина</p>
+                            <p class="text color-medium mb10">Адрес</p>
+                            <p class="text mb20">По запросу</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="3">
+                            <div class="heading4 compare-item__box-article">Штат компании</div>
+                        </div>
+                        <div class="compare-item__box box3">
+                            <p class="text color-medium mb10">Кол-во работников</p>
+                            <p class="text mb20">2</p>
+                            <p class="text color-medium mb10">Фонд ЗП</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="4">
+                            <div class="heading4 compare-item__box-article">Помещения</div>
+                        </div>
+                        <div class="compare-item__box box4">
+                            <p class="text color-medium mb10">Площадь</p>
+                            <p class="text mb20">80 м2</p>
+                            <p class="text color-medium mb10">Арендодатель</p>
+                            <p class="text mb20">Юридическое лицо</p>
+                            <p class="text color-medium mb10">Стоимость аренды</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="5">
+                            <div class="heading4 compare-item__box-article">Дополнительная информация</div>
+                        </div>
+                        <div class="compare-item__box box5">
+                            <p class="text color-medium mb10">Возраст бизнеса</p>
+                            <p class="text mb20">84 года</p>
+                            <p class="text color-medium mb10">Причина продажи</p>
+                            <p class="text mb20">Переезд</p>
+                            <p class="text color-medium mb10">Организационно-правовая форма</p>
+                            <p class="text mb20">ООО</p>
+                        </div>
+                    </div>
+                    <div class="compare-item" data-item="3">
+                        <div class="image mb20">
+                            <img src="images/image.jpg" alt="image"/>
+                        </div>
+                        <div class="carousel-custom-compare__remove"></div>
+                        <div class="heading3 compare-item__article mb20 color-black">Салон красоты в торговом центре рядом</div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="1">
+                            <div class="heading4 compare-item__box-article">Финансы</div>
+                        </div>
+                        <div class="compare-item__box box1">
+                            <p class="text color-medium mb10">Прибыль</p>
+                            <p class="text mb20">150 000 ₽ в месяц</p>
+                            <p class="text color-medium mb10">Окупаемость</p>
+                            <p class="text mb20">15 месяцев</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="2">
+                            <div class="heading4 compare-item__box-article">Местоположение</div>
+                        </div>
+                        <div class="compare-item__box box2">
+                            <p class="text color-medium mb10">Город</p>
+                            <p class="text mb20">Санкт-Петербург</p>
+                            <p class="text color-medium mb10">Район</p>
+                            <p class="text mb20">Калининский</p>
+                            <p class="text color-medium mb10">Метро</p>
+                            <p class="text mb20">Площадь Ленина</p>
+                            <p class="text color-medium mb10">Адрес</p>
+                            <p class="text mb20">По запросу</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="3">
+                            <div class="heading4 compare-item__box-article">Штат компании</div>
+                        </div>
+                        <div class="compare-item__box box3">
+                            <p class="text color-medium mb10">Кол-во работников</p>
+                            <p class="text mb20">2</p>
+                            <p class="text color-medium mb10">Фонд ЗП</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="4">
+                            <div class="heading4 compare-item__box-article">Помещения</div>
+                        </div>
+                        <div class="compare-item__box box4">
+                            <p class="text color-medium mb10">Площадь</p>
+                            <p class="text mb20">80 м2</p>
+                            <p class="text color-medium mb10">Арендодатель</p>
+                            <p class="text mb20">Юридическое лицо</p>
+                            <p class="text color-medium mb10">Стоимость аренды</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="5">
+                            <div class="heading4 compare-item__box-article">Дополнительная информация</div>
+                        </div>
+                        <div class="compare-item__box box5">
+                            <p class="text color-medium mb10">Возраст бизнеса</p>
+                            <p class="text mb20">84 года</p>
+                            <p class="text color-medium mb10">Причина продажи</p>
+                            <p class="text mb20">Переезд</p>
+                            <p class="text color-medium mb10">Организационно-правовая форма</p>
+                            <p class="text mb20">ООО</p>
+                        </div>
+                    </div>
+                    <div class="compare-item" data-item="4">
+                        <div class="image mb20">
+                            <img src="images/image.jpg" alt="image"/>
+                        </div>
+                        <div class="carousel-custom-compare__remove"></div>
+                        <div class="heading3 compare-item__article mb20 color-black">Салон красоты в торговом центре рядом</div>
+                        <div class="heading3 color-main">2 300 000 ₽</div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="1">
+                            <div class="heading4 compare-item__box-article">Финансы</div>
+                        </div>
+                        <div class="compare-item__box box1">
+                            <p class="text color-medium mb10">Прибыль</p>
+                            <p class="text mb20">150 000 ₽ в месяц</p>
+                            <p class="text color-medium mb10">Окупаемость</p>
+                            <p class="text mb20">15 месяцев</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="2">
+                            <div class="heading4 compare-item__box-article">Местоположение</div>
+                        </div>
+                        <div class="compare-item__box box2">
+                            <p class="text color-medium mb10">Город</p>
+                            <p class="text mb20">Санкт-Петербург</p>
+                            <p class="text color-medium mb10">Район</p>
+                            <p class="text mb20">Калининский</p>
+                            <p class="text color-medium mb10">Метро</p>
+                            <p class="text mb20">Площадь Ленина</p>
+                            <p class="text color-medium mb10">Адрес</p>
+                            <p class="text mb20">По запросу</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="3">
+                            <div class="heading4 compare-item__box-article">Штат компании</div>
+                        </div>
+                        <div class="compare-item__box box3">
+                            <p class="text color-medium mb10">Кол-во работников</p>
+                            <p class="text mb20">2</p>
+                            <p class="text color-medium mb10">Фонд ЗП</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="4">
+                            <div class="heading4 compare-item__box-article">Помещения</div>
+                        </div>
+                        <div class="compare-item__box box4">
+                            <p class="text color-medium mb10">Площадь</p>
+                            <p class="text mb20">80 м2</p>
+                            <p class="text color-medium mb10">Арендодатель</p>
+                            <p class="text mb20">Юридическое лицо</p>
+                            <p class="text color-medium mb10">Стоимость аренды</p>
+                            <p class="text mb20">80 000 ₽ в месяц</p>
+                        </div>
+                        <div class="compare-item__box-fix mb20 mt40" data-box="5">
+                            <div class="heading4 compare-item__box-article">Дополнительная информация</div>
+                        </div>
+                        <div class="compare-item__box box5">
+                            <p class="text color-medium mb10">Возраст бизнеса</p>
+                            <p class="text mb20">84 года</p>
+                            <p class="text color-medium mb10">Причина продажи</p>
+                            <p class="text mb20">Переезд</p>
+                            <p class="text color-medium mb10">Организационно-правовая форма</p>
+                            <p class="text mb20">ООО</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-none mt50 text-center" style="display: none">
+                    <div class="heading3 mb20">Добавьте объекты для сравнения</div>
+                    <a href="#" class="button button-black">в каталог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= templates/footer.html
+
+<script type="text/javascript" src="https://yastatic.net/jquery/3.1.1/jquery.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js" defer></script>
+<script type="text/javascript" src="js/scripts.js" defer></script>
+</body>
+</html>

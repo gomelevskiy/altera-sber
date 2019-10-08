@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI KIT</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+//= templates/header.html
+//= templates/mobileNavigation.html
+//= templates/navigation.html
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="heading1 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+
+                <div class="heading2 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+
+                <div class="heading3 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+
+                <div class="sub-heading mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+
+                <p class="p mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur.</p>
+
+                <p class="text mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur.</p>
+
+                <a href="#" class="link">link 1</a>
+                <span class="link">link 2</span>
+
+                <br/>
+
+                <p class="caption mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur.</p>
+
+            </div>
+            <div class="col-12 mt20">
+                <div class="heading2 mb10">Кнопки вызова попапа</div>
+                <span class="button button-black" data-toggle="modal" data-target="#horizontalModal">вызов модалки</span>
+            </div>
+
+            <div class="col-12 mt20">
+                <div class="heading2 mb10">Кнопка для видосов</div>
+                <button type="button" class="button button-black video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/IP7uGKgJL8U" data-target="#videoModal">Воспроизвести</button>
+            </div>
+
+            <div class="col-12 mt20">
+
+                <div onclick="$('.toast').toast('show');" class="button button-black">Кнопка с тостом</div>
+
+                <!-- class error or success -->
+                <div class="toast success" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                    <div class="toast-body">
+                        <div class="text">Sed ut perspiciatis, unde omnis iste natus error sit  accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto.</div>
+                        <div class="toast-body__close" onclick="closeToasts()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+//= templates/footer.html
+
+<script type="text/javascript" src="https://yastatic.net/jquery/3.1.1/jquery.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/scripts.js" defer></script>
+</body>
+</html>

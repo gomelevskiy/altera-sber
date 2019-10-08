@@ -1,0 +1,551 @@
+/* colors */
+$black: #262626
+$dark: #777
+$medium: #a2a2a2
+$light1: #E2E2E2
+$light2: #F2F2F2
+$white: #fff
+$main: #19BB4F
+$mainLight: #E4F2E9
+$mainDark: #1A9F29
+
+/* animation */
+$transition: all 0.3s ease
+
+*
+  outline: none !important
+
+/* fonts */
+@font-face
+  font-family: 'Stem'
+  src: url('../fonts/Stem-Regular.otf')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Stem-medium'
+  src: url('../fonts/Stem-Medium.otf')
+  font-weight: normal
+  font-style: normal
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Stem'
+
+p
+  margin-bottom: 0
+
+h1, h2, h3, h4
+  font-weight: normal
+
+img
+  width: 100%
+  height: inherit
+
+a, .link
+  color: inherit
+  transition: $transition
+
+  &:hover
+    text-decoration: none
+    color: $main
+
+    .underline
+      color: $main
+
+  &.underline
+    text-decoration: underline
+
+  &.active
+    color: $main
+.sort
+  .link
+    &.arrow
+      &:after
+        content: ''
+        width: 8px
+        height: 8px
+        border-top: 2px solid $main
+        border-right: 2px solid $main
+        display: inline-block
+        transform: rotate(-45deg)
+        position: relative
+        top: 2px
+        right: inherit
+        margin-left: 6px
+        transition: $transition
+
+    &.arrow-down
+      &:after
+        content: ''
+        width: 8px
+        height: 8px
+        border-top: 2px solid $main
+        border-right: 2px solid $main
+        display: inline-block
+        transform: rotate(135deg)
+        position: relative
+        top: -2px
+        margin-left: 6px
+        transition: $transition
+
+/* color's class */
+.color-black
+  color: $black
+
+.color-dark
+  color: $dark
+
+.color-medium
+  color: $medium
+
+.color-light-1
+  color: $light1
+
+.color-light-2
+  color: $light2
+
+.color-white
+  color: $white
+
+.color-main
+  color: $main
+
+.color-main-light
+  color: $mainLight
+
+.color-main-dark
+  color: $mainDark
+
+/* heading's style */
+.heading1
+  font-family: 'Stem-medium'
+  font-size: 36px
+  line-height: 40px
+
+.heading2
+  font-family: 'Stem-medium'
+  font-size: 24px
+  line-height: 30px
+
+.heading3
+  font-family: 'Stem-medium'
+  font-size: 18px
+  line-height: 25px
+
+.sub-heading
+  font-size: 18px
+  line-height: 30px
+
+.p
+  font-size: 14px
+  line-height: 25px
+
+.text
+  font-size: 14px
+  line-height: 20px
+
+.link
+  @extend .text
+  cursor: pointer
+
+.caption
+  font-size: 12px
+  line-height: 20px
+
+.box
+  display: inline-block
+  vertical-align: middle
+
+.bold
+  font-family: 'Stem-medium'
+  font-weight: normal
+
+.wrapper
+  min-height: 760px
+
+.section
+  margin-bottom: 50px
+
+.por
+  position: relative
+
+/* popups */
+.popup
+  padding: 20px
+  border-radius: 3px
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1)
+  border: 1px solid $light1
+  background-color: $white
+  visibility: hidden
+  opacity: 0
+  left: 0
+  top: 36px
+  min-width: 200px
+  transition: $transition
+
+  &.show
+    visibility: visible
+    opacity: 1
+
+  &-location
+    position: absolute
+    right: 0px
+    left: inherit
+    top: 26px
+    z-index: 30
+    width: 290px
+
+  &-city
+    padding: 10px 15px
+    position: absolute
+    max-height: 146px
+    overflow-x: auto
+    z-index: 30
+    box-sizing: border-box
+
+    &__item
+      margin-bottom: 10px
+      cursor: pointer
+      transition: $transition
+
+      &:last-child
+        margin-bottom: 0
+
+      &:hover
+        color: $main
+
+  &-cabinet
+    padding: 10px 15px
+    position: absolute
+    max-height: 146px
+    overflow-x: auto
+    z-index: 30
+    box-sizing: border-box
+
+  &-location-mobile
+    position: absolute
+    top: 86px
+    left: 0
+    right: 0
+    z-index: 50
+
+    .button
+      text-align-last: center
+
+    .popup-location-mobile__btn-small
+      width: 100px
+
+  &-settings
+    left: inherit
+    right: 0
+    position: absolute
+    background-color: $white
+    z-index: 8
+
+/* select */
+.select2
+  .custom-select
+    &-box
+      height: 40px
+      line-height: 40px
+      border-radius: 3px !important
+      border: 1px solid $light1
+      background-color: $white
+      position: relative
+      font-size: 14px
+      color: $black
+      font-weight: normal
+      transition: $transition
+
+      .select2-selection__rendered
+        line-height: 40px
+        padding-right: 30px
+        padding-left: 15px
+
+      .select2-selection__arrow
+        width: 20px
+        height: 20px
+        position: absolute
+        right: 10px
+        top: 50%
+        margin-top: -10px
+        background-image: url('../images/chevron-down.svg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        transition: $transition
+
+        b
+          display: none
+
+  &.select2-container--open
+    .custom-select
+      &-box
+        border: 1px solid $main
+
+        .select2-selection__arrow
+          transform: rotate(180deg)
+
+.select2-container
+  .custom-select-dropdown
+    border-radius: 2px
+    border: 1px solid $light1
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1)
+    margin-top: 10px
+
+    .select2-results
+      padding: 5px 0
+
+    .select2-results__option
+      font-size: 14px
+      line-height: 20px
+      color: $black
+      padding: 5px 15px
+      font-weight: normal
+      transition: $transition
+
+      &[aria-selected=true], &.select2-results__option--highlighted
+        background: transparent
+        color: $black
+
+      &:hover
+        background: transparent
+        color: $main
+
+.custom-input, .custom-textarea
+  width: 100%
+  box-sizing: border-box
+  padding: 0 15px
+  border: 1px solid $light1
+  height: 40px
+  line-height: 40px
+  color: $medium
+  font-size: 14px
+  border-radius: 3px
+  transition: $transition
+
+  &::placeholder
+    color: $medium
+
+  &.small
+    max-width: 120px
+
+  &:focus
+    border: 1px solid $main
+
+  &__edit
+    position: relative
+
+    .custom-input
+      padding-right: 32px
+
+    .edit-btn
+      width: 20px
+      height: 20px
+      cursor: pointer
+      position: absolute
+      right: 10px
+      top: 10px
+      background: url('../images/edit.svg') no-repeat center
+
+.custom-textarea
+  min-height: 120px
+
+.checkbox-label
+  position: relative
+  z-index: 10
+  margin-bottom: 0
+
+  &__input
+    position: absolute
+    visibility: hidden
+    z-index: -1
+
+    &:checked ~ .checkbox-label__toggle
+      &:after
+        margin-left: 12px
+        background-color: $main
+
+  &__toggle
+    cursor: pointer
+
+    &:before
+      content: ''
+      width: 24px
+      height: 8px
+      border-radius: 4px
+      background-color: $light1
+      display: inline-block
+      vertical-align: middle
+      margin-right: 8px
+      transition: $transition
+
+    &:after
+      content: ''
+      display: inline-block
+      position: absolute
+      left: -2px
+      top: 2px
+      background-color: $medium
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+      border: 2px solid $white
+      width: 16px
+      height: 16px
+      border-radius: 100%
+      transition: $transition
+
+
+/* buttons */
+.button
+  display: inline-block
+  font-family: 'Stem-medium'
+  font-size: 14px
+  border-radius: 3px
+  height: 40px
+  line-height: 40px
+  padding: 0 30px
+  cursor: pointer
+  transition: $transition
+
+  &-border
+    border: 1px solid $main
+    background-color: $white
+
+    &:hover
+      background-color: $main
+      color: $white
+
+    &.border-gray
+      border-color: $light2
+      color: $black
+
+      &:hover
+        background-color: $light1
+        border-color: $light1
+
+  &-black
+    background-color: $black
+    box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.4)
+    color: $white
+    border: none
+
+    &:hover
+      background-color: $main
+      box-shadow: 0px 8px 12px rgba(25, 187, 79, 0.4)
+      color: $white
+
+  &-small
+    display: inline-block
+    padding: 0 20px
+    height: 30px
+    line-height: 30px
+    border: 1px solid $light1
+    border-radius: 3px
+    cursor: pointer
+    transition: $transition
+
+    &:hover, &.active
+      background-color: $main
+      border-color: $main
+      color: $white
+
+/* margin's class */
+.ml0
+  margin-left: 0
+
+.ml15
+  margin-left: 15px
+
+.ml20
+  margin-left: 20px
+
+.mr0
+  margin-right: 0
+
+.mr8
+  margin-right: 8px
+
+.mr10
+  margin-right: 10px
+
+.mr15
+  margin-right: 15px
+
+.mr20
+  margin-right: 20px
+
+.mr24
+  margin-right: 24px
+
+.mr30
+  margin-right: 30px
+
+.mb0
+  margin-bottom: 0
+
+.mb5
+  margin-bottom: 5px
+
+.mb10
+  margin-bottom: 10px
+
+.mb20
+  margin-bottom: 20px
+
+.mb24
+  margin-bottom: 24px
+
+.mb30
+  margin-bottom: 30px
+
+.mb40
+  margin-bottom: 40px
+
+.mb50
+  margin-bottom: 50px
+
+.mb100
+  margin-bottom: 100px
+
+.mt20
+  margin-top: 20px
+
+.mt30
+  margin-top: 30px
+
+.mt40
+  margin-top: 40px
+
+.mt50
+  margin-top: 50px
+
+.mt100
+  margin-top: 100px
+
+/* text description in detail card */
+.detail-description
+  a
+    text-decoration: underline
+
+  p
+    @extend .p
+    color: $black
+    margin-bottom: 20px
+
+  h2
+    @extend .heading2
+    margin-bottom: 15px
+
+  h3
+    @extend .heading3
+    margin-bottom: 10px
+
+  ol, ul
+    padding-inline-start: 20px
+
+    li
+      @extend .p
+      color: $dark
+      margin-bottom: 10px

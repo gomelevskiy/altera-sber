@@ -1,0 +1,46 @@
+<div class="navigation d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <nav class="navigation-list d-flex">
+                    <a class="link bold color-black mr20" href="#">Каталог бизнеса</a>
+                    <a class="link bold color-black mr20" href="#">О проекте</a>
+                    <a class="link bold color-black mr20" href="#">Команда проекта</a>
+                    <a class="link bold color-black mr20" href="#">СМИ о нас</a>
+                    <a class="link bold color-black mr20" href="#">Обучение</a>
+                    <a class="link bold color-black mr20" href="#">Контакты</a>
+                </nav>
+            </div>
+            <div class="col-5 text-right">
+                <div class="icon por mr24" onclick="showLocation();" id="selectLocation">
+                    <span class="link icon icon-location">Санкт-Петербург</span>
+
+                    <div class="popup popup-city text-left">
+                        <div class="popup-city__item">Санкт-Петербург</div>
+                        <div class="popup-city__item">Москва</div>
+                        <div class="popup-city__item">Екатеринбург</div>
+                        <div class="popup-city__item">Новосибирск</div>
+                        <div class="popup-city__item">Псков</div>
+                        <div class="popup-city__item">Набережные Челны</div>
+                    </div>
+
+                    <div class="popup show popup-location text-left">
+                        <div class="heading4 mb20">Ваш город Санкт-Петербург?</div>
+                        <span class="button mr10 button-black">Да</span>
+                        <span class="button button-border border-gray" onclick="otherLocation();">Другой город</span>
+                    </div>
+                </div>
+                <div class="icon por mr24" onclick="showCabinet();" id="btnCabinet">
+                    <span class="icon link icon-login">Личный кабинет</span>
+
+                    <div class="popup popup-cabinet text-left">
+                        <div class="link mb12" >Выйти из кабинета</div>
+                        <div class="link mb12">еще пункт</div>
+                    </div>
+                </div>
+                <span class="link icon icon-favourite mr10">5</span>
+                <span class="link icon icon-compare">3</span>
+            </div>
+        </div>
+    </div>
+</div>

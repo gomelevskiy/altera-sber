@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altera sberbank</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+//= templates/header.html
+//= templates/mobileNavigation.html
+//= templates/navigation.html
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row section3 mb30">
+            <div class="col-12">
+                <div class="breadcrumbs d-flex mt50 mb10">
+                    <div class="breadcrumbs-item"><a href="#" class="caption color-dark">Главная</a></div>
+                    <div class="breadcrumbs-item"><a href="#" class="caption color-dark">Личный кабинет</a></div>
+                    <div class="breadcrumbs-item"><span class="caption color-dark">Новый объект</span></div>
+                </div>
+                <div class="heading1 mb50">Добавить новый объект</div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12col-lg-4 col-xl-4">
+                <div class="heading2">Основная информация</div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-8">
+                <div class="row mb20">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Название объекта</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Город</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                </div>
+                <div class="row mb20">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Стоимость</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Прибыль в месяц</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                </div>
+                <div class="row mb20">
+                    <div class="col-12">
+                        <label class="caption mb0 color-dark">Описание</label>
+                        <textarea class="custom-textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt30 mb30">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 col-xl-4">
+                <div class="heading2">Местоположение</div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-8">
+                <div class="row mb20">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Город</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Район</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                </div>
+                <div class="row mb20">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Метро</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Адрес</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt30 mb30">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 col-xl-4">
+                <div class="heading2">Штат компании</div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-8">
+                <div class="row mb20">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Цена</label>
+                        <select class="custom-select">
+                            <option value="0" name="0">Все категории</option>
+                            <option value="1" name="1">Категория 1</option>
+                            <option value="2" name="2">Категория 2</option>
+                            <option value="3" name="3">Категория 3</option>
+                            <option value="4" name="4">Категория 4</option>
+                            <option value="5" name="5">Категория 5</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Прибыль в месяц</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                </div>
+                <div class="row mb20">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Расходы в месяц</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <label class="caption mb0 color-dark">Доходы в месяц</label>
+                        <input type="text" required class="custom-input"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt30 mb30">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= templates/footer.html
+
+<script type="text/javascript" src="https://yastatic.net/jquery/3.1.1/jquery.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js" defer></script>
+<script type="text/javascript" src="js/scripts.js" defer></script>
+</body>
+</html>

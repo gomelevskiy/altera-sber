@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altera sberbank</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+//= templates/header.html
+//= templates/mobileNavigation.html
+//= templates/navigation.html
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row section3">
+            <div class="col-12">
+                <div class="breadcrumbs d-flex mt50 mb10">
+                    <div class="breadcrumbs-item"><a href="#" class="caption color-dark">Главная</a></div>
+                    <div class="breadcrumbs-item"><span class="caption color-dark">Личный кабинет</span></div>
+                </div>
+                <div class="heading1 mb20">Личный кабинет</div>
+            </div>
+        </div>
+        <div class="row mb50">
+            <div class="col-12 personal-navigation__line">
+                <div class="d-lg-flex justify-content-between">
+                    <div class="personal-navigation">
+                        <a href="#" class="personal-navigation__item link">Мои объекты</a>
+                        <a href="#" class="personal-navigation__item link active">Мои данные</a>
+                        <a href="#" class="personal-navigation__item link">Настройки</a>
+                    </div>
+                    <div class="personal-info">
+                        <div class="d-flex">
+                            <div class="profile small bg mr30" style="background-image: url('images/man.jpg')"></div>
+                            <div class="info">
+                                <div class="heading3 color-black mb5">Константин Константинопольский</div>
+                                <a href="#" class="link underline color-dark">выйти из аккаунта</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3 col-xl-3 mb20 text-center">
+                <div class="profile bg sqr mb10" style="background-image: url('images/man.jpg')"></div>
+                <a href="#" class="link color-dark underline">загрузить фото</a>
+            </div>
+            <div class="col-12 col-lg-9 col-xl-9">
+                <div class="heading2 line-bottom">Константин Константинопольский</div>
+                <div class="row mb10 align-items-center">
+                    <div class="col-12 col-lg-1 col-xl-1">
+                        <div class="text color-medium">Email</div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="custom-input__edit">
+                            <input type="email" class="custom-input" required placeholder="Введите Ваш email"/>
+                            <span class="edit-btn" data-toggle="modal" data-target="#popupEmail"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb10 align-items-center">
+                    <div class="col-12 col-lg-1 col-xl-1">
+                        <div class="text color-medium">Телефон</div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="custom-input__edit">
+                            <input type="tel" class="custom-input" required placeholder="Введите Ваш телефон"/>
+                            <span class="edit-btn" data-toggle="modal" data-target="#popupTel"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb10 align-items-center">
+                    <div class="col-12 col-lg-1 col-xl-1">
+                        <div class="text color-medium">Город</div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="custom-input__edit">
+                            <input type="text" class="custom-input" required placeholder="Введите Ваш город"/>
+                            <span class="edit-btn" data-toggle="modal" data-target="#popupCity"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb10 align-items-center">
+                    <div class="col-12 col-lg-1 col-xl-1">
+                        <div class="text color-medium">Пароль</div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="custom-input__edit">
+                            <input type="password" class="custom-input" required placeholder="Введите Ваш пароль"/>
+                            <span class="edit-btn" data-toggle="modal" data-target="#popupPass"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-custom fade" id="popupEmail" tabindex="-1" role="dialog" aria-labelledby="popupEmail" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="modal-custom__close" data-dismiss="modal" aria-label="Close"></span>
+                <div class="heading2 mb20 color-black">Изменить email</div>
+                <div class="row">
+                    <div class="col-12 col-lg-12 mb30">
+                        <label class="caption mb0 color-dark">Email</label>
+                        <input type="email" required class="custom-input" placeholder="Новый email"/>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="button button-black">Изменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-custom fade" id="popupTel" tabindex="-1" role="dialog" aria-labelledby="popupTel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="modal-custom__close" data-dismiss="modal" aria-label="Close"></span>
+                <div class="heading2 mb20 color-black">Изменить телефон</div>
+                <div class="row">
+                    <div class="col-12 col-lg-12 mb10">
+                        <label class="caption mb0 color-dark">Телефон</label>
+                        <input type="tel" required class="custom-input" placeholder="Телефон"/>
+                    </div>
+                    <div class="col-12 col-lg-12 mb30">
+                        <label class="caption mb0 color-dark">Код подтверждения</label>
+                        <input type="text" required class="custom-input" placeholder="Код подтверждения"/>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="button button-black">Изменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-custom fade" id="popupCity" tabindex="-1" role="dialog" aria-labelledby="popupCity" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="modal-custom__close" data-dismiss="modal" aria-label="Close"></span>
+                <div class="heading2 mb20 color-black">Изменить город</div>
+                <div class="row">
+                    <div class="col-12 col-lg-12 mb30">
+                        <label class="caption mb0 color-dark">Выберите город</label>
+                        <select class="custom-select" style="width: 100%">
+                            <option value="0" name="0">Санкт-Петербург</option>
+                            <option value="1" name="1">Москва</option>
+                            <option value="2" name="2">Нижний-Новгород</option>
+                            <option value="3" name="3">Псков</option>
+                            <option value="4" name="4">Невероятно длинное название города</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="button button-black">Изменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-custom fade" id="popupPass" tabindex="-1" role="dialog" aria-labelledby="popupPass" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="modal-custom__close" data-dismiss="modal" aria-label="Close"></span>
+                <div class="heading2 mb20 color-black">Изменить пароль</div>
+                <div class="row">
+                    <div class="col-12 col-lg-12 mb10">
+                        <label class="caption mb0 color-dark">Старый пароль</label>
+                        <input type="password" class="custom-input" required placeholder="Введите старый пароль"/>
+                    </div>
+                    <div class="col-12 col-lg-12 mb10">
+                        <label class="caption mb0 color-dark">Новый пароль</label>
+                        <input type="password" class="custom-input" required placeholder="Введите новый пароль"/>
+                    </div>
+                    <div class="col-12 col-lg-12 mb30">
+                        <label class="caption mb0 color-dark">Повторите новый пароль</label>
+                        <input type="password" class="custom-input" required placeholder="Повторите новый пароль"/>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="button button-black">Изменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= templates/footer.html
+
+<script type="text/javascript" src="https://yastatic.net/jquery/3.1.1/jquery.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js" defer></script>
+<script type="text/javascript" src="js/scripts.js" defer></script>
+</body>
+</html>

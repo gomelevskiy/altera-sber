@@ -1,0 +1,8 @@
+.idea/
+build/
+node_modules
+__MACOSX
+app/__MACOSX
+app/ajax
+app/noname
+*.zip
